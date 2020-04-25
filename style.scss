@@ -1,6 +1,58 @@
+h1 {
+    text-align: center;
+    padding: 10px;
+}
 
-footer a {
-  font-family: Arial;
+$navbarColor: pink;
+$navbarHover: gray;
+
+
+#customNav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $navbarColor;
+    }
+
+  li {
+    float: right;
+  }
+
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  li a:hover {
+      background-color: $navbarHover;
+      color: $navbarColor;
+  }
+
+  #Home {
+      float: left;
+  }
+
+  @media (max-width: 800px) {
+      li a{
+        padding: 20px;
+      }
+      ul {
+        padding: 10px;
+      }
+    }
+}
+div.card-body {
   font-size: 16px;
-  color: red;
 }

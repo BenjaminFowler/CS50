@@ -1,7 +1,50 @@
-footer a {
-  font-family: Arial;
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+#customNav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+#customNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: pink;
+}
+#customNav li {
+  float: right;
+}
+#customNav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+#customNav li a:hover {
+  background-color: gray;
+  color: pink;
+}
+#customNav #Home {
+  float: left;
+}
+@media (max-width: 800px) {
+  #customNav li a {
+    padding: 20px;
+  }
+  #customNav ul {
+    padding: 10px;
+  }
+}
+
+div.card-body {
   font-size: 16px;
-  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
